@@ -1,4 +1,4 @@
-console.log("Cześć!");
+console.log("Cześć! Ten kod jest już w repozytorium Git.");
 
 let imageButton = document.querySelector(".js-header__imageButton");
 let imageParagraph = document.querySelector(".js-header__imageParagraph");
