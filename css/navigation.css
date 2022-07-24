@@ -1,0 +1,24 @@
+.navigation__list {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navigation__link {
+    background-color: #1587e9eb;
+    color: #f0f8ff;
+    padding: 5px 10px;
+    line-height: 2.5;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation__link:hover {
+    background-color: #121bbc;
+}
+
+.navigation__link:active {
+    background-color: crimson;
+}

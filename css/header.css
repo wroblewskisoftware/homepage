@@ -1,0 +1,70 @@
+.header__pageTitle {
+    background-color: #1520ab;
+    color: #f0f8ff;
+    padding: 10px 15px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header__imageParagraph {
+    text-align: center;
+}
+
+.header__image {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
+}
+
+.header__buttonParagraph {
+    text-align: center;
+}
+
+.header__imageButton {
+    padding: 5px 31px;
+    margin: 5px;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    background-color: #1587e9eb;
+    color: #f0f8ff;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
+}
+
+.header__imageButton:hover {
+    background-color: #121bbc;
+}
+
+.header__imageButton:active {
+    background-color: crimson;
+}
+
+.header__backgroundButton {
+    margin: 5px;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    background-color: #1587e9eb;
+    color: #f0f8ff;
+    padding: 5px 12px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
+}
+
+.header__backgroundButton--dark {
+    padding: 5px 20px;
+}
+
+.header__backgroundButton:hover {
+    background-color: #121bbc;
+}
+
+.header__backgroundButton:active {
+    background-color: crimson;
+}
