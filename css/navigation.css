@@ -1,18 +1,20 @@
-.navigation__list {
-    list-style: none;
-    padding: 0 10px;
+.navigation__paragraph {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navigation__link {
     background-color: #1587e9eb;
     color: #f0f8ff;
-    padding: 5px 10px;
-    line-height: 2.5;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
+    margin: 10px;
     text-decoration: none;
+    text-align: center;
     font-weight: bold;
+    flex: 1 0 160px;
 }
 
 .navigation__link:hover {

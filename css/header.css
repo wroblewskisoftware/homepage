@@ -13,66 +13,38 @@
     text-align: center;
 }
 
-.header__imageParagraph--hidden {
-    display: none;
-}
-
 .header__image {
     border: 5px solid rgb(0, 0, 0);
     border-radius: 15px;
     box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
 }
 
-.header__buttonParagraph {
-    text-align: center;
+.header__imageParagraph--hidden {
+    display: none;
 }
 
-.header__imageButton {
-    padding: 5px 22px;
-    margin: 5px;
-    font-size: 18px;
-    font-family: "Lato", sans-serif;
+.header__buttonsParagraph {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header__button {
+    padding: 13px 10px;
+    margin: 10px;
     background-color: #1587e9eb;
     color: #f0f8ff;
     font-weight: bold;
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
+    flex: 0 0 295px;
 }
 
-.header__imageButton--hidden {
-    padding: 5px 20px;
-}
-
-.header__imageButton:hover {
+.header__button:hover {
     background-color: #121bbc;
 }
 
-.header__imageButton:active {
-    background-color: crimson;
-}
-
-.header__backgroundButton {
-    margin: 5px;
-    font-size: 18px;
-    font-family: "Lato", sans-serif;
-    background-color: #1587e9eb;
-    color: #f0f8ff;
-    padding: 5px 5px;
-    font-weight: bold;
-    border: 2px solid black;
-    border-radius: 8px;
-    box-shadow: 3px 3px 3px 0 hsl(0, 0%, 40%);
-}
-
-.header__backgroundButton--dark {
-    padding: 5px 13px;
-}
-
-.header__backgroundButton:hover {
-    background-color: #121bbc;
-}
-
-.header__backgroundButton:active {
+.header__button:active {
     background-color: crimson;
 }
