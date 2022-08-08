@@ -1,6 +1,6 @@
 # Radosław Wróblewski - my first website (homepage)
 
-![Radosław Wróblewski](https://i.ibb.co/2nSVCdd/14125730-595159080672082-7319666703939170328-o.jpg)
+![Radosław Wróblewski](images/image.jpg)
 
 ## Demo
 
