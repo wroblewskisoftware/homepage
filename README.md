@@ -19,4 +19,5 @@ an experienced Senior Software Engineer, watches over the correctness of my work
 ## Technologies
 
 - BEM
+- Flexbox
 - ES6+ Features
