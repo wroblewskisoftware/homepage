@@ -10,11 +10,11 @@
         themeName.innerText = body.classList.contains("body--dark") ? "jasne" : "ciemne";
     };
 
-    const hideImage = () => {
-        const imageParagraph = document.querySelector(".js-header__imageParagraph");
-        const imageStatus = document.querySelector(".js-header__imageStatus");
-        imageParagraph.classList.toggle("header__imageParagraph--hidden");
-        imageStatus.innerText = imageParagraph.classList.contains("header__imageParagraph--hidden") ? "Pokaż" : "Ukryj";
+    const toggleImage = () => {
+        const firstImage = document.querySelector(".js-header__firstImage");
+        const secondImage = document.querySelector(".js-header__secondImage");
+        firstImage.classList.toggle("header__firstImage--hidden");
+        secondImage.classList.toggle("header__secondImage--hidden");
     };
 
     const init = () => {
@@ -22,7 +22,7 @@
         backgroundButton.addEventListener("click", toggleBackground);
 
         const imageButton = document.querySelector(".js-header__button--image");
-        imageButton.addEventListener("click", hideImage);
+        imageButton.addEventListener("click", toggleImage);
 
         welcome();
     };
