@@ -1,31 +1,46 @@
 {
-    const welcome = () => {
-        console.log("Cześć! Ten kod jest już w repozytorium Git.");
-    };
+  const welcome = () => {
+    console.log("Cześć! Ten kod jest już w repozytorium Git.");
+  };
 
-    const toggleBackground = () => {
-        const body = document.querySelector(".js-body");
-        const themeName = document.querySelector(".js-header__themeName");
-        body.classList.toggle("body--dark");
-        themeName.innerText = body.classList.contains("body--dark") ? "jasne" : "ciemne";
-    };
+  const toggleBackground = () => {
+    const body = document.querySelector(".js-body");
+    const themeName = document.querySelector(".js-header__themeName");
+    body.classList.toggle("body--dark");
+    themeName.innerText = body.classList.contains("body--dark")
+      ? "jasne"
+      : "ciemne";
+  };
 
-    const toggleImage = () => {
-        const firstImage = document.querySelector(".js-header__firstImage");
-        const secondImage = document.querySelector(".js-header__secondImage");
-        firstImage.classList.toggle("header__firstImage--hidden");
-        secondImage.classList.toggle("header__secondImage--hidden");
-    };
+  const toggleImage = () => {
+    const image = document.querySelector(".js-header__firstImage");
+    const firstImage =
+      "https://wroblewski82.github.io/homepage/images/image.jpg";
+    const secondImage =
+      "https://wroblewski82.github.io/homepage/images/image2.jpg";
 
-    const init = () => {
-        const backgroundButton = document.querySelector(".js-header__button--background");
-        backgroundButton.addEventListener("click", toggleBackground);
+    switch (image.src) {
+      case firstImage:
+        image.src = secondImage;
+        return;
 
-        const imageButton = document.querySelector(".js-header__button--image");
-        imageButton.addEventListener("click", toggleImage);
+      case secondImage:
+        image.src = firstImage;
+        return;
+    }
+  };
 
-        welcome();
-    };
+  const init = () => {
+    const backgroundButton = document.querySelector(
+      ".js-header__button--background"
+    );
+    backgroundButton.addEventListener("click", toggleBackground);
 
-    init();
-};
+    const imageButton = document.querySelector(".js-header__button--image");
+    imageButton.addEventListener("click", toggleImage);
+
+    welcome();
+  };
+
+  init();
+}
