@@ -14,20 +14,20 @@
 
   const toggleImage = () => {
     const image = document.querySelector(".js-header__image");
-    const firstImage =
-      "https://wroblewski82.github.io/homepage/images/image.jpg";
-    const secondImage =
-      "https://wroblewski82.github.io/homepage/images/image2.jpg";
+    const firstImageSrc = "images/image.jpg";
+    const firstImageAlt = "Mężczyzna nad jeziorem";
+    const secondImageSrc = "images/image2.jpg";
+    const secondImageAlt = "Mężczyzna na deskorolce";
 
-    switch (image.src) {
-      case firstImage:
-        image.src = secondImage;
-        image.alt = "Mężczyzna na deskorolce";
+    switch (image.alt) {
+      case firstImageAlt:
+        image.src = secondImageSrc;
+        image.alt = secondImageAlt;
         return;
 
-      case secondImage:
-        image.src = firstImage;
-        image.alt = "Mężczyzna nad jeziorem";
+      case secondImageAlt:
+        image.src = firstImageSrc;
+        image.alt = firstImageAlt;
         return;
     }
   };
