@@ -13,7 +13,7 @@
   };
 
   const toggleImage = () => {
-    const image = document.querySelector(".js-header__firstImage");
+    const image = document.querySelector(".js-header__image");
     const firstImage =
       "https://wroblewski82.github.io/homepage/images/image.jpg";
     const secondImage =
@@ -22,10 +22,12 @@
     switch (image.src) {
       case firstImage:
         image.src = secondImage;
+        image.alt = "Mężczyzna na deskorolce";
         return;
 
       case secondImage:
         image.src = firstImage;
+        image.alt = "Mężczyzna nad jeziorem";
         return;
     }
   };
